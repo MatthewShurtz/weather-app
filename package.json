@@ -1,0 +1,51 @@
+{
+
+  "name": "weather-app",
+
+  "version": "1.0.0",
+
+  "main": "index.js",
+
+  "devDependencies": {
+
+    "webpack-cli": "^5.0.1"
+
+  },
+
+  "scripts": {
+
+    "test": "echo \"Error: no test specified\" && exit 1",
+
+    "build": "webpack"
+
+  },
+
+  "repository": {
+
+    "type": "git",
+
+    "url": "git+https://github.com/MatthewShurtz/weather-app.git"
+
+  },
+
+  "author": "",
+
+  "license": "ISC",
+
+  "bugs": {
+
+    "url": "https://github.com/MatthewShurtz/weather-app/issues"
+
+  },
+
+  "homepage": "https://github.com/MatthewShurtz/weather-app#readme",
+
+  "description": "",
+
+  "dependencies": {
+
+    "webpack": "^5.75.0"
+
+  }
+
+}
