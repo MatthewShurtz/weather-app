@@ -1,0 +1,1 @@
+(()=>{"use strict";document.querySelector("body").appendChild(function(e){const t=document.createElement("h1");return t.textContent=e,t}("Weather Application"))})();
