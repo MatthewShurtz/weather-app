@@ -6,6 +6,8 @@
 
   "main": "index.js",
 
+  "private": true,
+
   "devDependencies": {
 
     "webpack-cli": "^5.0.1"
