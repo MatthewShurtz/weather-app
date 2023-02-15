@@ -1,5 +1,6 @@
-import createHeader from "./sect/header";
+import "./style.css";
+import getWeather from "./sect/api.js";
 
-const body = document.querySelector('body');
-
-body.appendChild(createHeader('Weather Application'));
+getWeather('Houston').then(function(result) {
+    console.log(result);
+}); 
