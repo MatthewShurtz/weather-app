@@ -1,6 +1,8 @@
 import "./style.css";
-import getWeather from "./sect/api.js";
+import { getWeather, getGiphy } from "./sect/api.js";
 
-getWeather('Houston').then(function(result) {
-    console.log(result);
-}); 
+const img = document.querySelector('img');
+const para = document.querySelector('p');
+
+getWeather(para, 'Houston');
+getGiphy(img)
