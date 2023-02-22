@@ -1,14 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 :root {
     --main-color: #F5EDF0;
     --nav-color: #D1CCDC;
     --text-color: #3D2C2E;
+    --cinereous: #886F68;
+    --charcoal: #424C55;
 
 }
 
-h1 {
-    color: red;
+body {
+    background-color: var(--main-color);
+    font-family: 'Inter', sans-serif;
+    margin: 0;
 }
 
 .container {
+    margin: auto 100px auto 100px;
+}
 
+header {
+    margin: 0;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--cinereous);
+    margin: 0;
+    padding: 16px 0 16px 0;
+}
+
+li {
+    list-style-type: none;
 }
