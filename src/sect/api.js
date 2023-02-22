@@ -8,7 +8,7 @@ async function getWeather (city, scale, el) {
     let currentWeather = weatherData.main.temp;
 
     if (scale === 'f') {
-        el.textContent = Math.round(kToF(currentWeather)); 
+        el.textContent = Math.round(kToF(currentWeather));
     } else if (scale === 'c') {
         el.textContent = Math.round(kToC(currentWeather));
     }
