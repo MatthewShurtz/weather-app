@@ -8,4 +8,4 @@ const para = document.querySelector('p');
 
 getWeather('houston', 'f', para);
 getGiphy(img, 'cold');
-gifTemp(299);
+gifTemp(250);

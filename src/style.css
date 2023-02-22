@@ -1,3 +1,14 @@
+:root {
+    --main-color: #F5EDF0;
+    --nav-color: #D1CCDC;
+    --text-color: #3D2C2E;
+
+}
+
 h1 {
     color: red;
+}
+
+.container {
+
 }
