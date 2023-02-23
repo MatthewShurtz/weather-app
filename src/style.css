@@ -20,7 +20,7 @@ body {
 }
 
 header {
-    margin: 0;
+    width: 100%;
 }
 
 ul {
@@ -33,4 +33,9 @@ ul {
 
 li {
     list-style-type: none;
+}
+
+main {
+    display: flex;
+    justify-content: center;
 }
