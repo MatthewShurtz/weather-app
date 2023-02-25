@@ -12,7 +12,6 @@ async function getGiphy (temp) {
     
     const response = await fetch(`https://api.giphy.com/v1/gifs/translate?api_key=v98HQGqgpRpvBS4W2ZZy3MuZtZOPtHL1&s=${temp}`)
     const gif = await response.json();
-    console.log(gif);
     return gif
 }
 

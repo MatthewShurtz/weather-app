@@ -15,8 +15,9 @@ const weatherGif = getGiphy(weather)
 // const weatherGif = getGiphy(weather.then((weatherData) => console.log(gifTemp(weatherData.main.temp))));
 
 weather.then((weatherData) => p.textContent = (kToF(weatherData.main.temp)));
-
+weather.then((weatherData) => console.log(weatherData));
 
 weatherGif.then((gif) => img.src = gif.data.images.original.url);
 
 // testGif.then((gif) => img.src = gif.data.images.original.url)
+
