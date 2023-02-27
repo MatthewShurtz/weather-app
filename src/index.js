@@ -6,18 +6,18 @@ import { kToF } from "./sect/convert";
 import "./sect/gif";
 import gifTemp from "./sect/gif";
 
-const p = document.querySelector('p');
+const btn = document.querySelector('button');
+const tempNum = document.querySelector(".tempNum");
 const img = document.querySelector('img');
 
-const weather = getWeather('Houston');
-// const testGif = getGiphy('hot');
-const weatherGif = getGiphy(weather)
-// const weatherGif = getGiphy(weather.then((weatherData) => console.log(gifTemp(weatherData.main.temp))));
 
-weather.then((weatherData) => p.textContent = (kToF(weatherData.main.temp)));
-weather.then((weatherData) => console.log(weatherData));
+btn.addEventListener('click', function() {
 
-weatherGif.then((gif) => img.src = gif.data.images.original.url);
+    const input = document.querySelector('input').value;
+    const weather = getWeather(input);
+    weather.then((weatherData) => tempNum.textContent = (kToF(weatherData.main.temp)));
 
-// testGif.then((gif) => img.src = gif.data.images.original.url)
+    const weatherTemp = weather.then((weatherData) => getGiphy(gifTemp(weatherData.main.temp)));
 
+    weatherTemp.then((gif) => img.src = gif.data.images.original.url)
+})

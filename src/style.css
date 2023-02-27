@@ -6,7 +6,6 @@
     --text-color: #3D2C2E;
     --cinereous: #886F68;
     --charcoal: #424C55;
-
 }
 
 body {
@@ -15,27 +14,53 @@ body {
     margin: 0;
 }
 
-.container {
-    margin: auto 100px auto 100px;
-}
-
-header {
-    width: 100%;
-}
-
-ul {
+.city-form {
     display: flex;
-    justify-content: space-around;
-    background-color: var(--cinereous);
-    margin: 0;
-    padding: 16px 0 16px 0;
-}
-
-li {
-    list-style-type: none;
+    align-items: center;
+    flex-direction: column;
+    margin: 25px auto;
 }
 
 main {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid red;
+}
+
+.container {
+    margin: auto 100px auto 100px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+img {
+    border-radius: 2%;
+}
+
+input {
+    width: 400px;
+    height: 44px;
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+button {
+    width: 250px;
+    height: 40px;
+    font-size: 26px;
+    border-radius: 5%;
+}
+
+button:hover {
+    transition: 500ms;
+    background-color: var(--cinereous);
+}
+
+.weather {
+    font-size: 40px;
 }

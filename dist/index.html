@@ -9,20 +9,15 @@
 </head>
 <body>
     <div class="container">
-        <header>
-            <nav>
-                <ul>
-                    <li>New York City</li>
-                    <li>Los Angeles</li>
-                    <li>Chicago</li>
-                    <li>Houston</li>
-                    <li>Phoenix</li>
-                </ul>    
-            </nav>
-        </header>
+            <h1>Giphy Weather</h1>
         <main>
+            <div class="city-form">
+                <input type="text">
+                <button>Search City</button>
+            </div>
+            <div class="result center"></div>
+            <p class="weather">The Tempature for <span class="city"></span> is <span class="tempNum"></span> Degrees</p>
             <img src="" alt="" id="gif">
-            <p class="weather"></p>
         </main>
     </div>
     <script src="/dist/bundle.js"></script>
